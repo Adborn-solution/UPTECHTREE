@@ -1,0 +1,160 @@
+.blog-page{
+/* background:#05070b; */
+color:white;
+}
+
+/* HERO */
+
+.blog-hero{
+text-align:center;
+padding:160px 20px;
+background-image:url("/public/images/Abstractbackgroundgradient1.png");
+background-repeat:no-repeat;
+background-size:cover;
+}
+
+.blog-hero h1{
+font-size:50px;
+margin:10px 0;
+}
+
+.blog-hero span{
+color:#1eaedb;
+}
+
+.blog-hero p{
+max-width:600px;
+margin:auto;
+color:#9ca3af;
+}
+
+.badge{
+  display: inline-block;
+  padding: 15px 40px;
+  background: rgba(52, 57, 110);
+  border-radius: 30px;
+  font-size: 14px;
+  margin-bottom: 25px;
+  color:white;
+  backdrop-filter: blur(6px);
+  border-top:2px solid #1fb6ff;
+  border-right:1px solid #1fb6ff;
+  border-left:1px solid #1fb6ff;
+}
+
+/* BLOG GRID */
+
+.blog-container{
+padding:80px 20px;
+max-width:1200px;
+margin:auto;
+}
+
+.section-title{
+text-align:center;
+margin-bottom:40px;
+}
+
+.blog-grid{
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:25px;
+}
+
+.blog-card{
+background:#0b0f14;
+border-radius:12px;
+overflow:hidden;
+transition:0.3s;
+}
+
+.blog-card:hover{
+transform:translateY(-5px);
+}
+
+.blog-card img{
+width:100%;
+}
+
+.blog-content{
+padding:15px;
+}
+
+.blog-meta{
+font-size:12px;
+color:#9ca3af;
+margin-bottom:10px;
+display:flex;
+justify-content:space-between;
+}
+
+.blog-content h4{
+font-size:16px;
+margin-bottom:10px;
+}
+
+.blog-content p{
+font-size:13px;
+color:#9ca3af;
+margin-bottom:10px;
+}
+
+.blog-content a{
+color:#1eaedb;
+font-size:13px;
+}
+
+/* NEWSLETTER */
+
+.newsletter{
+text-align:center;
+padding:80px 20px;
+/* border-top:1px solid #1f2937; */
+}
+
+.newsletter p{
+color:#9ca3af;
+margin:10px 0;
+}
+
+.newsletter-form{
+margin-top:20px;
+}
+
+.newsletter-form input{
+padding:10px;
+width:250px;
+background:#0b0f14;
+border:1px solid #1f2937;
+color:white;
+}
+
+.newsletter-form button{
+padding:10px 18px;
+background:#1eaedb;
+border:none;
+color:white;
+margin-left:10px;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:992px){
+
+.blog-grid{
+grid-template-columns:repeat(2,1fr);
+}
+
+}
+
+@media(max-width:600px){
+
+.blog-grid{
+grid-template-columns:1fr;
+}
+
+.blog-hero h1{
+font-size:28px;
+}
+
+}

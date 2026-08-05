@@ -1,0 +1,59 @@
+.cta-section {
+  background-image: url('/public/images/cta-bg.png'); /* Add your background image path here */
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat; /* Prevents the background from repeating */
+  color: white;
+  padding: 100px 0;  /* Add top and bottom padding */
+  text-align: center;
+  position: relative;
+  margin-bottom:50px;
+}
+
+.cta-content {
+  z-index: 1;
+}
+
+.cta-title {
+  font-size: 36px;
+  font-weight: bold;
+  line-height: 1.4;
+}
+
+.cta-title span {
+  color: #0a83e8; /* Accent color for "IT Infrastructure" */
+}
+
+.cta-description {
+  font-size: 18px;
+  margin: 20px 0;
+}
+
+.cta-button {
+  background-color: #0a83e8;
+  color: white;
+  padding: 12px 30px;
+  font-size: 16px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #0a66b0;
+}
+
+@media (max-width: 767px) {
+  .cta-title {
+    font-size: 28px;
+  }
+
+  .cta-description {
+    font-size: 16px;
+  }
+
+  .cta-button {
+    padding: 10px 20px;
+  }
+}

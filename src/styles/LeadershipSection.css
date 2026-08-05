@@ -1,0 +1,29 @@
+.leadership-section {
+  padding: 60px 0;
+}
+
+.leadership-section .tag {
+  color: #00bcd4;
+  /* font-weight: bold; */
+}
+
+.leadership-section h2 {
+  font-size: 40px;
+  color: #fff;
+  margin-top: 20px;
+}
+
+.leadership-section h2 span {
+  color: #00bcd4;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.row .col-md-3 {
+  flex: 1 1 22%;
+  margin: 10px;
+}

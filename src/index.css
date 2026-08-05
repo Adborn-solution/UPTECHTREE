@@ -1,0 +1,19 @@
+/* src/index.css */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* This ensures consistent box sizing */
+}
+
+body {
+  background-color: black; /* Set the background color to black */
+  color: white; /* Set the text color to white for contrast */
+   font-family: 'Roboto', sans-serif; /* Apply Roboto font to entire website */
+  font-weight: 500; 
+  margin: 0; /* Remove default margin */
+}
+
+a {
+  text-decoration: none; /* Remove underline from links */
+  color: inherit; /* Inherit text color */
+}

@@ -1,0 +1,394 @@
+.hero {
+  padding: 130px 0;
+  /* background: linear-gradient(135deg, #050d1a, #081c2f); */
+  color: #ffffff;
+  position: relative;
+  overflow: hidden;
+}
+/* Background Image Layer */
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 65%; /* controls how much image shows */
+  height: 100%;
+  background: url("/public/images/banner-2.png") no-repeat right center;
+  background-size: contain; /* or cover */
+  /* opacity: 0.25;  */
+  z-index: 0;
+}
+
+/* Keep content above background */
+.hero .container {
+  position: relative;
+  z-index: 2;
+}
+/* Small top badge */
+.hero-badge {
+  display: inline-block;
+  padding: 10px 18px;
+  background: rgba(15, 35, 43);
+  border-radius: 30px;
+  font-size: 14px;
+  margin-bottom: 25px;
+  backdrop-filter: blur(6px);
+  border-top:2px solid #1fb6ff;
+  border-right:2px solid #1fb6ff;
+  border-left:2px solid #1fb6ff;
+}
+
+/* Main heading */
+.hero-title {
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 25px;
+}
+
+.highlight {
+  color: #1fb6ff; /* Blue highlight */
+}
+
+/* Paragraph */
+.hero-text {
+  color: #b8c4d6;
+  font-size: 18px;
+  max-width: 500px;
+  margin-bottom: 35px;
+}
+
+/* Buttons wrapper */
+.hero-buttons {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+/* Primary button */
+.btn-primary-custom {
+  background-color: #1fb6ff;
+  border: none;
+  padding: 14px 28px;
+  border-radius: 50px;
+  font-weight: 600;
+  color: #fff;
+  transition: 0.3s ease;
+}
+
+.btn-primary-custom:hover {
+  background-color: #0ea5e9;
+  transform: translateY(-2px);
+}
+
+/* Outline button */
+.btn-outline-custom {
+  background: transparent;
+  border: 1px solid #ffffff;
+  padding: 14px 28px;
+  border-radius: 50px;
+  color: #ffffff;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+
+.btn-outline-custom:hover {
+  background-color: #ffffff;
+  color: #081c2f;
+}
+.stats-section {
+  background: #3d7d95;
+  padding: 1px 0;
+  color: white;
+}
+
+.stat-box {
+  padding: 20px;
+}
+
+.num {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+.text-num {
+  font-size: 14px;
+  opacity: 0.9;
+}
+.stat-box:hover {
+  transform: translateY(-5px);
+  transition: 0.3s;
+}
+.about-section{
+  padding:80px 0;
+  background:#000;
+}
+
+.about-wrapper{
+  background:#0b0f14;
+  padding:60px;
+  border-radius:8px;
+  position:relative;
+}
+
+.about-img img{
+  width:80%;
+  border-radius:6px;
+  object-fit:cover;
+  margin-top:-150px;
+}
+
+.tag{
+  display:inline-block;
+  padding:8px 18px;
+  border-radius:30px;
+  background:rgba(0,180,255,0.15);
+  color:#7dd3fc;
+  font-size:14px;
+  margin-bottom:20px;
+}
+
+.about-content h2{
+  font-size:38px;
+  font-weight:600;
+  color:white;
+  margin-bottom:20px;
+}
+
+.about-content h2 span{
+  color:#2cc3ff;
+}
+
+.about-content p{
+  color:#b3b9c4;
+  line-height:1.7;
+  margin-bottom:15px;
+  font-size:15px;
+}
+
+@media (max-width:991px){
+
+  .about-wrapper{
+    padding:40px;
+  }
+
+  .about-content h2{
+    font-size:30px;
+  }
+
+}
+
+@media (max-width:768px){
+
+  .about-img{
+    margin-bottom:30px;
+  }
+
+  .about-wrapper{
+    padding:30px;
+  }
+
+}
+.services-section{
+  background:#000;
+  padding:100px 0;
+  color:white;
+}
+
+.services-header{
+  max-width:700px;
+  margin:auto;
+  margin-bottom:60px;
+}
+
+.tag{
+  display:inline-block;
+  padding:8px 18px;
+  border-radius:25px;
+  background:rgba(0,180,255,0.15);
+  color:#5bd3ff;
+  margin-bottom:15px;
+  font-size:14px;
+}
+
+.services-header h2{
+  font-size:38px;
+  font-weight:600;
+}
+
+.services-header h2 span{
+  color:#2cc3ff;
+}
+
+.services-header p{
+  color:#9ca3af;
+  margin-top:15px;
+}
+
+/* Service Card */
+
+.service-card{
+  position:relative;
+  overflow:hidden;
+  border-radius:12px;
+}
+
+.service-card img{
+  width:100%;
+  height:350px;
+  object-fit:cover;
+  transition:0.5s;
+}
+
+/* Dark overlay */
+
+.overlay{
+  position:absolute;
+  inset:0;
+  /* background:linear-gradient(
+      to top,
+      rgba(0,0,0,0.8),
+      rgba(0,0,0,0.2)
+  ); */
+  display:flex;
+  align-items:flex-end;
+  padding:20px;
+}
+
+.overlay h5{
+  color:white;
+  font-size:18px;
+  font-weight:500;
+}
+
+/* Hover effect */
+
+.service-card:hover img{
+  transform:scale(1.08);
+}
+
+/* Responsive */
+
+@media(max-width:768px){
+
+  .services-header h2{
+    font-size:30px;
+  }
+
+  .service-card img{
+    height:300px;
+  }
+
+}
+.service-card:hover .overlay{
+  background:linear-gradient(
+      to top,
+      rgba(0,0,0,0.95),
+      rgba(0,0,0,0.3)
+  );
+}
+.solution-section {
+  /* background-color: #121212; */
+  padding: 60px 0;
+}
+
+.services-header {
+  margin-bottom: 30px;
+}
+
+.services-header .tag {
+  color: #56c6f0;
+  font-size: 18px;
+}
+
+.services-header h2 {
+  font-size: 36px;
+  font-weight: bold;
+  color: white;
+}
+
+.services-header h2 span {
+  color: #56c6f0;
+}
+
+.work-card {
+  /* background-color: #1e1e1e; */
+  /* background-color: #1e1e1e; */
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height:300px;
+ }
+
+.work-card img {
+  width: 100%;
+  height: 200px;  /* You can set a fixed height for images if necessary */
+  object-fit: cover; /* Ensures images maintain aspect ratio */
+}
+
+.work-content {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end; /* This pushes the content to the bottom */
+  flex-grow: 1;
+}
+
+.work-content h5 {
+  font-size: 22px;
+  color:black;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.work-content p {
+  color:black;
+  font-size: 14px;
+}
+
+.work-card:hover {
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.5);
+}
+
+@media (max-width: 767px) {
+  .work-card img {
+    height: 200px;
+  }
+
+  .services-header h2 {
+    font-size: 28px;
+  }
+}
+
+.card1, .card2, .card3, .card4 {
+  background-size: cover; /* Ensures the image covers the entire card */
+  background-position: center; /* Centers the image within the card */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+  border-radius: 8px; /* Optional, to add rounded corners */
+  height: 100%; /* Ensures the height of the card takes up the whole space */
+}
+.card1 {
+  background-image: url('/public/images/layout1.png'); /* Use the correct path for your image */
+}
+
+.card2 {
+  background-image: url("/public/images/layout-2.png"); /* Use the correct path for your image */
+}
+
+.card3 {
+  background-image: url("/public/images/layout-3.png"); /* Use the correct path for your image */
+}
+
+.card4 {
+  background-image: url("/public/images/layout-4.png"); /* Use the correct path for your image */
+}
+.solution-section{
+  padding: 60px 0;
+}
+.services-header {
+  margin-bottom: 40px;
+}

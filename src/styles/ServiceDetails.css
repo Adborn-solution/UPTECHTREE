@@ -1,0 +1,226 @@
+/* Banner */
+
+.service-banner{
+background-image:url("/public/images/Abstractbackgroundgradient1.png");
+padding:160px 0;
+text-align:center;
+color:white;
+}
+
+.service-banner .badge{
+  display: inline-block;
+  padding: 15px 20px;
+  background: rgba(15, 35, 43);
+  border-radius: 30px;
+  font-size: 14px;
+  margin-bottom: 25px;
+  color:white;
+  backdrop-filter: blur(6px);
+  border-top:2px solid #1fb6ff;
+  border-right:1px solid #1fb6ff;
+  border-left:1px solid #1fb6ff;
+}
+
+.service-banner h1{
+font-size:48px;
+font-weight:600;
+}
+
+.service-banner span{
+color:#1eaedb;
+}
+
+/* Main Section */
+
+.service-main{
+padding:80px 0;
+background:#05070b;
+color:white;
+}
+
+/* Sidebar */
+
+.service-sidebar{
+background:#0b0f14;
+padding:25px;
+border-radius:12px;
+margin-bottom:30px;
+}
+
+.service-sidebar h4{
+margin-bottom:20px;
+}
+
+.service-sidebar ul{
+list-style:none;
+padding:0;
+}
+
+.service-sidebar ul li{
+border-bottom:1px solid #1f2937;
+}
+
+.service-sidebar ul li a{
+display:flex;
+justify-content:space-between;
+padding:12px 0;
+text-decoration:none;
+color:white;
+font-size:14px;
+}
+.team-section span{
+   color:#1eaedb; 
+}
+.service-sidebar ul li a:hover{
+color:#1eaedb;
+}
+
+/* Contact Card */
+
+.contact-card{
+margin-top:25px;
+background:#0b0f14;
+padding:20px;
+border-radius:12px;
+}
+
+.contact-card input{
+width:100%;
+margin-bottom:10px;
+padding:10px;
+background:#05070b;
+border:1px solid #1f2937;
+border-radius:6px;
+color:white;
+}
+
+.contact-card button{
+width:100%;
+padding:10px;
+background:#1eaedb;
+border:none;
+border-radius:6px;
+color:white;
+cursor:pointer;
+}
+
+/* Right Content */
+
+.service-main h2{
+font-size:30px;
+margin-bottom:15px;
+}
+
+.service-main p{
+color:#9ca3af;
+margin-bottom:25px;
+}
+
+.offer-list{
+list-style:none;
+padding:0;
+}
+
+.offer-list li{
+background:#0b0f14;
+padding:12px 15px;
+border-radius:8px;
+margin-bottom:10px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+.offer-list li::after{
+content:"➜";
+background:#1eaedb;
+width:26px;
+height:26px;
+display:flex;
+align-items:center;
+justify-content:center;
+border-radius:50%;
+font-size:12px;
+}
+
+/* Responsive */
+
+@media (max-width:992px){
+
+.service-banner h1{
+font-size:34px;
+}
+
+}
+
+@media (max-width:768px){
+
+.service-main{
+padding:50px 20px;
+}
+
+}
+
+/* Team Section */
+
+.team-section{
+margin-top:50px;
+}
+
+.team-section h3{
+margin-bottom:25px;
+font-size:24px;
+}
+
+.team-grid{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:20px;
+}
+
+.team-card{
+background:#0b0f14;
+padding:15px;
+border-radius:12px;
+text-align:center;
+transition:0.3s;
+}
+
+.team-card img{
+width:100%;
+border-radius:10px;
+margin-bottom:10px;
+}
+
+.team-card h5{
+margin-bottom:5px;
+}
+
+.team-card p{
+color:#9ca3af;
+font-size:14px;
+}
+
+/* Hover */
+
+.team-card:hover{
+transform:translateY(-5px);
+}
+
+/* Responsive */
+
+@media(max-width:992px){
+
+.team-grid{
+grid-template-columns:repeat(2,1fr);
+}
+
+}
+
+@media(max-width:576px){
+
+.team-grid{
+grid-template-columns:1fr;
+}
+
+}
